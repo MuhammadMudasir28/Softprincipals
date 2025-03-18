@@ -1,18 +1,23 @@
-## Getting Started
+# Car Rental Management System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project demonstrates the use of the **GRASP Controller Principle** in a Car Rental Management System.
 
-## Folder Structure
+## Principle Applied: Controller
+The Controller principle assigns the responsibility of handling user actions to a separate controller class instead of placing it in UI or data classes.
 
-The workspace contains two folders by default, where:
+### 1. **With Controller Principle**
+- **`RentalController`** class manages car rental and return actions.
+- The **Customer** and **Car** classes only handle their own data.
+- This ensures **better separation of concerns**, **modularity**, and **maintainability**.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### 2. **Without Controller Principle**
+- The **Customer** class directly handles rental logic.
+- This **violates separation of concerns**, making the code harder to maintain.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Benefits of Using Controller
+- **Reduces coupling** between objects.
+- **Improves code reusability** by centralizing logic.
+- **Enhances maintainability** and scalability.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Run
+Compile and run `Main.java` in your Java IDE.
